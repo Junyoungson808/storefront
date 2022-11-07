@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Project Store Front - Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---------------------------------
 
-## Available Scripts
+## We are deployed on _____
 
-In the project directory, you can run:
+[codesandboxURL]();
 
-### `npm start`
+---------------------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Web Application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ***[Explain your app, should be at least a paragraph. What does it do? Why should I use? Sell your product!]*** -->
 
-### `npm test`
+The web application consists of a frontend written in Razor views, HTML, CSS,
+Bootstrap, Popper, and jQuery. The backend was written in C# using ASP.NET Core 2, Entity Framework Core, and the MVC framework.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+An interface is provided to create a website store, view existing products, add to card, and delete from cart. This application is based on redux and how to manage state using redux and redux devtools. With Materuals.UI for styling. 
 
-### `npm run build`
+---------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tools Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Microsoft Visual Studio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- Express
 
-### `npm run eject`
+---------------------------------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Packages (npm i)
+redux
+react-redux
+redux-devtools-extension
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---------------------------------
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+***[Provide some images of your app that shows how it can be used with brief description as title]***
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Phase 1
 
-### Code Splitting
+![Uml Phase 1](./uml-36.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- ### Overview of Recent Posts
 
-### Analyzing the Bundle Size
+![](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Creating a Post
 
-### Making a Progressive Web App
+![Post Creation](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Enriching a Post
 
-### Advanced Configuration
+![Enriching Post](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Viewing Post Details
 
-### Deployment
+![Details of Post](https://via.placeholder.com/500x250)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---------------------------
 
-### `npm run build` fails to minify
+## Data Flow (Frontend, Backend, REST API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***[Add a clean and clear explanation of what the data flow is. Walk me through it.]***
+![Data Flow Diagram](/assets/img/Flowchart.png)
+
+--------------------------- -->
+
+## Data Model
+
+### Overall Project Schema
+
+***[Add a description of your DB schema. Explain the relationships to me.]***
+![Database Schema](/assets/img/ERD.png)
+
+--------------------------- -->
+
+## Authors
+
+Junyoung Son
+
+------------------------------
