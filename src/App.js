@@ -1,9 +1,9 @@
-
+import Users from './Components/'
 
 function App() {
   return (
     <>
-    
+      <Users/>
     </>
   );
 }
