@@ -7,7 +7,6 @@ const List = (props) => {
 
   return (
     <>
-    <h1>DOES THIS WORK</h1>
       <div>
         {
           products.map((products, index) => (
