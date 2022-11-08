@@ -1,9 +1,17 @@
-// import Box from '@mui/material/Box';
+import AppBar  from '@mui/material/AppBar';
+import ToolBar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 const Header = () => {
   return (
     <>
-        <h1>Our Store</h1>
+    <AppBar position="static">
+      <ToolBar>
+        <Typography variant='h4' className='header'>
+          Our Store
+        </Typography>
+      </ToolBar>
+    </AppBar>
     </>
   )
 }
