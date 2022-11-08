@@ -10,6 +10,9 @@ const Header = () => {
         <Typography variant='h4' className='header'>
           Our Store
         </Typography>
+        {/* <Typography variant='h4' className='header'>
+          cart
+        </Typography> */}
       </ToolBar>
     </AppBar>
     </>

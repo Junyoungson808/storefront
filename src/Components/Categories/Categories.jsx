@@ -3,6 +3,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import { filterCategory } from '../../Store/Reducers/reducer';
 import { connect } from 'react-redux';
+import Container from '@mui/material/Container';
 
 const Categories = (props) => {
 
@@ -10,6 +11,7 @@ const Categories = (props) => {
 
   return (
     <>
+    <Container sx={{ mx: 'auto'}}>
       <Typography gutterBottom variant="h5" component="div">
         Browse our Categories
       </Typography>
@@ -18,6 +20,7 @@ const Categories = (props) => {
         <Button onClick={() => filterCategory('clothing')}>Clothing</Button>
         <Button onClick={() => filterCategory('electronics')}>Electronics</Button>
       </ButtonGroup>
+      </Container>
     </>
   )
 }
