@@ -1,25 +1,25 @@
 import AppBar  from '@mui/material/AppBar';
 import ToolBar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+// import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const Header = () => {
-  const theme = createTheme({
-    palette: {
-      primary: {
-        light: '#ffff',
-      },
-      secondary: {
-        contrastText: '#000',
-      },
-    },
-  });
+  // const theme = createTheme({
+  //   palette: {
+  //     primary: {
+  //       light: '#ffff',
+  //     },
+  //     secondary: {
+  //       contrastText: '#000',
+  //     },
+  //   },
+  // });
 
 
   return (
     <>
-    <ThemeProvider theme={theme}>
-    <AppBar position="static" theme={theme}>
+    {/* <ThemeProvider > */}
+    <AppBar position="absolute" >
       <ToolBar>
         <Typography variant='h4' className='header' >
           Our Store
@@ -29,7 +29,7 @@ const Header = () => {
         </Typography> */}
       </ToolBar>
     </AppBar>
-    </ThemeProvider>
+    {/* </ThemeProvider> */}
     </>
   )
 }
