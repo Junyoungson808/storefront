@@ -11,3 +11,9 @@ export const addProduct = (product) => {
     payload: product
   }
 }
+
+export const reset = () => {
+  return {
+    type: 'RESET',
+  }
+}
