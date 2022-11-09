@@ -4,3 +4,10 @@ export const selectCategory = (category) => {
     payload: category
   }
 }
+
+export const addProduct = (product) => {
+  return {
+    type: 'ADD',
+    payload: product
+  }
+}

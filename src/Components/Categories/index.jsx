@@ -7,6 +7,7 @@ import { selectCategory } from '../../Store/actions';
 // import { Box } from '@mui/material';
 
 const Categories = (props) => {
+console.log(props);
 
   return (
     <>
@@ -14,12 +15,12 @@ const Categories = (props) => {
       <ul>
         {props.categories.map((category, index) => (
           // <Box sx={{display: 'flex', flexDirection: 'row', textAlign: 'center', margin: '25px'}}>
-          <li
+          <div
             key={`category-${index}`}
-            onClick={() => selectCategory(category.name)}
+            onClick={() => props.selectCategory(category.name)}
           >
             {category.displayName}
-          </li>
+          </div>
           // </Box>
         ))}
       </ul>
@@ -28,9 +29,10 @@ const Categories = (props) => {
 };
 
 
-const mapStateToProps = ({categoryReducer}) => {
+const mapStateToProps = (props) => {
+  console.log(props);
   return {
-    categories: categoryReducer.categories,
+    categories: props.categories.categories,
   }
 };
 

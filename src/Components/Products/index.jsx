@@ -5,34 +5,35 @@ import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
+import { addProduct } from '../../Store/actions';
 
 import Box from '@mui/material/Box';
 
 const Products = (props) => {
   console.log(props);
 
-  // const products = props.list.products.filter(product => product.category === props.list.activeCategory);
-
+  const products = props.products.filter(product => product.category === props.activeCategory);
+console.log(products);
   return (
     <>
-      <Box sx={{display: 'flex', flexDirection: 'row', textAlign: 'center', margin: '25px'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', textAlign: 'center', margin: '25px' }}>
         {
-          props.products.map((products, index) => (
-            <Card key={`products-${index}`} >
+          products.map((product, index) => (
+            <Card key={`product-${index}`} >
               <CardContent>
                 <Typography gutterBottom variant='h5' fontSize={25}>
-                  {products.name}
+                  {product.name}
                 </Typography>
                 <Typography gutterBottom variant='h5' fontSize={18}>
-                  $ {products.price}
+                  $ {product.price}
                 </Typography>
                 <Typography gutterBottom variant='h5' fontSize={18}>
-                  inStock: {products.inStock}
+                  inStock: {product.inStock}
                 </Typography>
               </CardContent>
               <CardActions>
-                    <Button color="secondary" size="small">ADD TO CART</Button>
-                    <Button color="secondary" size="small">VIEW DETAILS</Button>
+                <Button onClick={() => props.addProduct(product.name)} color="secondary" size="small">ADD TO CART</Button>
+                <Button color="secondary" size="small">VIEW DETAILS</Button>
               </CardActions>
             </Card>
           ))
@@ -43,16 +44,16 @@ const Products = (props) => {
   )
 }
 
-// adds redux state to the component prop chain
-const mapStateToProps = ({ productReducer }) => {
+const mapStateToProps = (state) => {
+  console.log(state);
   return {
-    products: productReducer,
+    products: state.products,
+    activeCategory: state.categories.activeCategory,
   }
 };
 
-// adds dispatch actions to the component prop chain
 const mapDispatchToProps = {
+  addProduct
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Products);
-// export default Categories;

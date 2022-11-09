@@ -1,35 +1,23 @@
 import AppBar  from '@mui/material/AppBar';
 import ToolBar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-// import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const Header = () => {
-  // const theme = createTheme({
-  //   palette: {
-  //     primary: {
-  //       light: '#ffff',
-  //     },
-  //     secondary: {
-  //       contrastText: '#000',
-  //     },
-  //   },
-  // });
-
 
   return (
     <>
-    {/* <ThemeProvider > */}
-    <AppBar position="absolute" >
+
+    <AppBar position="static" >
       <ToolBar>
-        <Typography variant='h4' className='header' >
+        <Typography variant='h4' className='header' sx={{ flexGrow: 1}} >
           Our Store
         </Typography>
-        {/* <Typography variant='h4' className='header'>
+        <Typography variant='h4' >
           cart
-        </Typography> */}
+        </Typography>
       </ToolBar>
     </AppBar>
-    {/* </ThemeProvider> */}
+
     </>
   )
 }
