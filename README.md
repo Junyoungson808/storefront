@@ -54,6 +54,7 @@ Packages (npm i)
 redux
 react-redux
 redux-devtools-extension
+
 ```
 
 ---------------------------------
@@ -65,6 +66,10 @@ redux-devtools-extension
 ### Phase 2
 
 ![Uml Phase 2](./uml-37.png)
+
+### Phase 3
+
+<!-- ![Uml Phase 2](./uml-37.png) -->
 
 
 --------------------------- -->
