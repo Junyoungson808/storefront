@@ -38,6 +38,9 @@ User sees a list of categories
 … Changes the quantity selector on an item and sees the cart total change
 
 Phase 3:
+Connect our store to a live API so that our data will persist and be bale to be separately managed.
+  -As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock
+  -As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it
 
 Phase 4:
 

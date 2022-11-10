@@ -12,8 +12,15 @@ export const addProduct = (product) => {
   }
 }
 
-export const reset = () => {
+export const removeFromCart = (product) => {
   return {
-    type: 'RESET',
+    type: 'REMOVE',
+    payload: product,
   }
 }
+
+// export const reset = () => {
+//   return {
+//     type: 'RESET',
+//   }
+// }

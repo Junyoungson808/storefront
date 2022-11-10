@@ -2,7 +2,7 @@ import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import productsReducer from './products';
 import categoryReducer from './categories';
-import cartReducer from './cart';
+import cartReducer from './cart/cart';
 
 let reducers =  combineReducers({
   categories: categoryReducer,
